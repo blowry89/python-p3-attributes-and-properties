@@ -34,7 +34,7 @@ class TestPerson:
         captured_out = io.StringIO()
         sys.stdout = captured_out
         Person(name="What do Persons do on their day off? Can't lie around - that's their job.",
-               job='Sales')
+            job='Sales')
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "Name must be string between 1 and 25 characters.\n")
 
